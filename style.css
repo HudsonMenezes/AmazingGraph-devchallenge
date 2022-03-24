@@ -1,0 +1,143 @@
+/* Cores Usadas no Documento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --laranja: #d2872c;
+  --cinza: #766f68;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- Barra de Navegação -------------*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--laranja);
+}
+
+.menu-itens {
+  font-size: 24px;
+  font-weight: 500;
+}
+.menu-itens a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: var(--cinza);
+}
+
+/* ---------- Main -------------*/
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.main .main-text {
+  margin-left: 60px;
+}
+.main .main-text h1 {
+  font-size: 48px;
+  color: var(--cinza);
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+.main .main-text p {
+  font-size: 18px;
+  width: 400px;
+  color: var(--cinza);
+}
+
+button {
+  margin-top: 30px;
+  height: 50px;
+  width: 50%;
+  background-color: var(--laranja);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #bd7a27;
+  transition: 0.3s all;
+}
+
+.main-img img {
+  width: 600px;
+  margin-right: 60px;
+}
+
+/* ---------- Footer -------------*/
+footer {
+  bottom: 20px;
+  left: 0;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+}
+footer p {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+footer span {
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+/* ---------- Media Queries -------------*/
+
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .main .main-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .main .main-text p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-img img {
+    width: 500px;
+    margin-right: 0;
+  }
+  footer {
+    bottom: 30px;
+    height: 20px;
+    position: absolute;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    /* margin: 0 auto; */
+    justify-content: center;
+  }
+}
