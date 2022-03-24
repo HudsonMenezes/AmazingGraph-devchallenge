@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
   color: var(--laranja);
 }
@@ -36,6 +36,10 @@ header {
   text-decoration: none;
   margin-right: 20px;
   color: var(--cinza);
+}
+.menu-itens a:hover {
+  color: #000000;
+  transition: 0.3s all;
 }
 
 /* ---------- Main -------------*/
@@ -52,7 +56,7 @@ header {
   margin-left: 60px;
 }
 .main .main-text h1 {
-  font-size: 48px;
+  font-size: 58px;
   color: var(--cinza);
   line-height: 55px;
   margin-bottom: 20px;
@@ -74,6 +78,7 @@ button {
   border-radius: 15px;
   border: none;
   cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 50px -17px;
 }
 button:hover {
   background-color: #bd7a27;
@@ -83,24 +88,6 @@ button:hover {
 .main-img img {
   width: 600px;
   margin-right: 60px;
-}
-
-/* ---------- Footer -------------*/
-footer {
-  bottom: 20px;
-  left: 0;
-  height: 40px;
-  position: absolute;
-  width: 100%;
-}
-footer p {
-  font-size: 20px;
-  margin-top: 30px;
-  text-align: center;
-}
-footer span {
-  color: var(--laranja);
-  font-weight: 700;
 }
 
 /* ---------- Media Queries -------------*/
@@ -127,12 +114,6 @@ footer span {
   .main-img img {
     width: 500px;
     margin-right: 0;
-  }
-  footer {
-    bottom: 30px;
-    height: 20px;
-    position: absolute;
-    width: 100%;
   }
 }
 @media (max-width: 500px) {
