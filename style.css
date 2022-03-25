@@ -241,6 +241,17 @@ img {
     width: 500px;
     margin-right: 0;
   }
+  .section-1 div {
+    margin: 0 50px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .square {
+    margin: 20px;
+  }
 }
 @media (max-width: 500px) {
   header {
