@@ -10,7 +10,6 @@
   --gray: #999999;
   --gray-light: #cccccc;
   --gray-lighter: #ececec;
-  --gray-lightest: lighten(@gray-lighter, 4%);
 }
 
 body {
