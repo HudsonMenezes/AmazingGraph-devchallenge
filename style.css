@@ -4,10 +4,17 @@
 :root {
   --laranja: #d2872c;
   --cinza: #766f68;
+  /* CARDS */
+  --gray-darker: #444444;
+  --gray-dark: #696969;
+  --gray: #999999;
+  --gray-light: #cccccc;
+  --gray-lighter: #ececec;
+  --gray-lightest: lighten(@gray-lighter, 4%);
 }
 
 body {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -19,7 +26,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
 }
 
 .logo {
@@ -42,6 +50,10 @@ header {
   transition: 0.3s all;
 }
 
+span {
+  color: var(--laranja);
+  font-weight: 600;
+}
 /* ---------- Main -------------*/
 
 .main {
@@ -51,6 +63,7 @@ header {
   align-content: center;
   justify-content: space-between;
   max-width: 1200px;
+  margin: 0 auto;
 }
 .main .main-text {
   margin-left: 60px;
@@ -90,6 +103,110 @@ button:hover {
   margin-right: 60px;
 }
 
+/* ---------- Section 1 -------------*/
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(248, 247, 247);
+  margin-top: 60px;
+  width: 100vw;
+  z-index: -1;
+  background-image: url(./img/fundo01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-1 div {
+  display: inline-block;
+  text-align: center;
+  width: 800px;
+}
+
+.section-1 h2 {
+  font-size: 42px;
+  color: var(--cinza);
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.section-1 p {
+  font-size: 18px;
+  color: var(--cinza);
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+/* -------------CARDS------------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.square {
+  width: 280px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #d9dbdf;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0 30px;
+}
+
+.square:hover {
+  -webkit-transform: translate(20px, -10px);
+  -ms-transform: translate(10px, -10px);
+  transform: translate(10px, -10px);
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.mask {
+  clip: rect(0px, 460px, 220px, 0px);
+  border-radius: 4px;
+  position: absolute;
+}
+
+img {
+  width: 280px;
+}
+
+.h1 {
+  margin: auto;
+  text-align: left;
+  margin-top: 240px;
+  padding-left: 30px;
+  font-size: 24px;
+}
+.container .square p {
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 18px;
+}
+
+.button {
+  background-color: var(--laranja);
+  color: white;
+  width: 90px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 70px;
+  font-size: 12px;
+  cursor: pointer;
+}
 /* ---------- Media Queries -------------*/
 
 @media (max-width: 850px) {
@@ -98,17 +215,26 @@ button:hover {
   }
   .logo {
     margin-bottom: 20px;
+    font-size: 28px;
   }
   .main {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
   .main .main-text {
     margin-left: 0;
     text-align: center;
   }
-
+  .main .main-text h1 {
+    font-size: 32px;
+    text-align: center;
+  }
   .main .main-text p {
     text-align: center;
+    font-size: 16px;
     margin: 0 auto;
   }
   .main-img img {
@@ -118,7 +244,19 @@ button:hover {
 }
 @media (max-width: 500px) {
   header {
-    /* margin: 0 auto; */
     justify-content: center;
+  }
+  .logo {
+    font-size: 28px;
+  }
+
+  .menu-itens {
+    font-size: 18px;
+  }
+  .main .main-text h1 {
+    font-size: 42px;
+  }
+  .main .main-text p {
+    font-size: 16px;
   }
 }
