@@ -34,11 +34,22 @@ header {
   font-weight: 600;
   color: var(--laranja);
 }
+.logo a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: var(--laranja);
+}
+.logo img {
+  width: 45px;
+  height: 45px;
+  margin-left: 30px;
+}
 
 .menu-itens {
   font-size: 24px;
   font-weight: 500;
 }
+
 .menu-itens a {
   text-decoration: none;
   margin-right: 20px;
@@ -99,7 +110,7 @@ button:hover {
 
 .main-img img {
   width: 600px;
-  margin-right: 60px;
+  /* margin-right: 60px; */
 }
 
 /* ---------- Section 1 -------------*/
@@ -108,7 +119,7 @@ button:hover {
   display: flex;
   justify-content: center;
   background-color: rgb(248, 247, 247);
-  margin-top: 60px;
+  margin-top: 100px;
   width: 100vw;
   z-index: -1;
   background-image: url(./img/fundo01.jpg);
@@ -143,6 +154,7 @@ button:hover {
   display: flex;
   justify-content: center;
   padding: 40px;
+  margin-top: 50px;
 }
 
 .square {
@@ -191,7 +203,7 @@ img {
   line-height: 18px;
 }
 
-.button {
+.button-cards {
   background-color: var(--laranja);
   color: white;
   width: 90px;
@@ -206,6 +218,85 @@ img {
   font-size: 12px;
   cursor: pointer;
 }
+
+/* ---------- Formulário de Contato -------------*/
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  padding: 40px;
+  margin: 50px auto;
+}
+
+/* label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+} */
+
+.form-area {
+  width: 600px;
+  margin: 0 10px;
+}
+
+.text-form {
+  width: 800px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.text-form h1,
+.text-form p {
+  color: var(--cinza);
+  width: 550px;
+}
+
+.text-form h1 {
+  font-size: 50px;
+  line-height: 55px;
+}
+.text-form p {
+  font-size: 18px;
+}
+
+.text-form .msg-enviada {
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+input,
+textarea {
+  width: 400px;
+  height: 60px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f3f3f3;
+}
+
+input:focus,
+textarea:focus {
+  border: none;
+  outline: 0;
+}
+
+textarea {
+  height: 200px;
+  vertical-align: top;
+}
+.button-form {
+  margin-left: 50px;
+  padding-left: 50px;
+}
+.button-form button {
+  font-size: 16px;
+}
+
 /* ---------- Media Queries -------------*/
 
 @media (max-width: 850px) {
@@ -241,6 +332,7 @@ img {
     margin-right: 0;
   }
   .section-1 div {
+    /* margin: 0 50px; */
     margin: 0 50px;
   }
 
@@ -250,6 +342,39 @@ img {
 
   .square {
     margin: 20px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  .text-form {
+    width: 600px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .text-form p {
+    width: 600px;
+    align-items: center;
+  }
+
+  .text-form .msg-enviada {
+    display: none;
+  }
+
+  .form-area {
+    width: 370px;
+  }
+
+  .button-form {
+    margin-left: 20px;
+    /* padding-left: 40px; */
+    width: 500px;
   }
 }
 @media (max-width: 500px) {
