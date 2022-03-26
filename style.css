@@ -394,4 +394,55 @@ textarea {
   .main .main-text p {
     font-size: 16px;
   }
+  .main-img img {
+    width: 400px;
+    margin-right: 0px;
+  }
+  .formulario {
+    display: inline-block;
+  }
+  .form-container {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  form div {
+    margin-left: 13%;
+  }
+  .text-form {
+    width: 300px;
+  }
+  .text-form h1 {
+    width: 300px;
+    font-size: 48px;
+    /* margin-left: -130px; */
+
+    /* line-height: 55px; */
+  }
+  .text-form p {
+    width: 300px;
+    align-items: center;
+  }
+
+  input,
+  textarea {
+    width: 350px;
+    height: 60px;
+    padding: 20px;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: none;
+    outline: 0;
+  }
+
+  textarea {
+    height: 150px;
+  }
+  .button-form {
+    margin-left: 13%;
+    /* padding-left: 40px; */
+    width: 500px;
+  }
 }
